@@ -1,23 +1,32 @@
+ï»¿; AutoHotKey Keybind Script
 ; Since 2015. 8.28
+; Updated 2015. 9.28
+; Written by kiyo-hiko
 
-; –³•ÏŠ·+ƒXƒy[ƒX‚©Q‚ÅƒGƒ“ƒ^[ƒL[
+; ç„¡å¤‰æ›+ã‚¹ãƒšãƒ¼ã‚¹ã‹Qã§ã‚¨ãƒ³ã‚¿ãƒ¼ã‚­ãƒ¼
 vk1Dsc07B & Space::Send,{Blind}{Enter}
 vk1Dsc07B & Q::Send,{Blind}{Enter}
 
-; –³•ÏŠ·+RZ‚ÅDELA–³•ÏŠ·+TGV‚ÅBS
+; å¤‰æ›ã‚‚ã‚¨ãƒ³ã‚¿ãƒ¼ã‚­ãƒ¼
+vk1Csc079::Send,{Blind}{Enter}
+
+; ç„¡å¤‰æ›+RZã§DELã€ç„¡å¤‰æ›+TGVã§BS
 vk1Dsc07B & R::Send,{Delete}
 vk1Dsc07B & Z::Send,{Delete}
 vk1Dsc07B & T::Send,{BS}
 vk1Dsc07B & G::Send,{BS}
 vk1Dsc07B & V::Send,{BS}
 
-; –³•ÏŠ·+IJKL‚Å–îˆóƒL[
+; ã‹ãªã‚­ãƒ¼ã‚‚BS
+vkF2sc070::Send,{BS}
+
+; ç„¡å¤‰æ›+IJKLã§çŸ¢å°ã‚­ãƒ¼
 vk1Dsc07B & I::Send,{Blind}{Up}
 vk1Dsc07B & J::Send,{Blind}{Left}
 vk1Dsc07B & K::Send,{Blind}{Down}
 vk1Dsc07B & L::Send,{Blind}{Right}
 
-; –³•ÏŠ·+ã’iƒL[‚Åƒtƒ@ƒ“ƒNƒVƒ‡ƒ“ƒL[
+; ç„¡å¤‰æ›+ä¸Šæ®µã‚­ãƒ¼ã§ãƒ•ã‚¡ãƒ³ã‚¯ã‚·ãƒ§ãƒ³ã‚­ãƒ¼
 vk1Dsc07B & 1::Send,{Blind}{F1}
 vk1Dsc07B & 2::Send,{Blind}{F2}
 vk1Dsc07B & 3::Send,{Blind}{F3}
@@ -31,11 +40,11 @@ vk1Dsc07B & 0::Send,{Blind}{F10}
 vk1Dsc07B & -::Send,{Blind}{F11}
 vk1Dsc07B & ^::Send,{Blind}{F12}
 
-; –³•ÏŠ·+F‚ÅPageDownA–³•ÏŠ·+A‚ÅPageUp
+; ç„¡å¤‰æ›+Fã§PageDownã€ç„¡å¤‰æ›+Aã§PageUp
 vk1Dsc07B & F::Send,{Blind}{PgDn}
 vk1Dsc07B & A::Send,{Blind}{PgUp}
 
-; –³•ÏŠ·+W‚ÅHOMEA–³•ÏŠ·+E‚ÅEND
+; ç„¡å¤‰æ›+Wã§HOMEã€ç„¡å¤‰æ›+Eã§END
 vk1Dsc07B & W::Send,{Blind}{Home}
 vk1Dsc07B & E::Send,{Blind}{End}
 
@@ -43,5 +52,5 @@ vk1Dsc07B & S::Send,{Blind}{Up}
 vk1Dsc07B & D::Send,{Blind}{Down}
 
 
-; –³•ÏŠ·+@‚ÅPrintScreen
-vk1Dsc07B & @::Send, {Blind}{PrintScreen}
+; ç„¡å¤‰æ›+:ã§PrintScreen
+vk1Dsc07B & vkBAsc028::Send,{Blind}{PrintScreen}
