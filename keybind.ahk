@@ -20,10 +20,10 @@ vk1Dsc07B & V::Send,{BS}
 ; かなキーもBS
 vkF2sc070::Send,{BS}
 
-; 無変換+IJKLで矢印キー
-vk1Dsc07B & I::Send,{Blind}{Up}
-vk1Dsc07B & J::Send,{Blind}{Left}
-vk1Dsc07B & K::Send,{Blind}{Down}
+; 無変換+HJKLで矢印キー
+vk1Dsc07B & K::Send,{Blind}{Up}
+vk1Dsc07B & H::Send,{Blind}{Left}
+vk1Dsc07B & J::Send,{Blind}{Down}
 vk1Dsc07B & L::Send,{Blind}{Right}
 
 ; 無変換+上段キーでファンクションキー
