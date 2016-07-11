@@ -1,20 +1,18 @@
-﻿; AutoHotKey Keybind Script
+; AutoHotKey Keybind Script
 ; Since 2015. 8.28
-; Updated 2015. 9.28
+; Updated 2016. 7.11
 ; Written by kiyo-hiko
 
-; 無変換+スペースかQでエンターキー
+; 無変換+スペースでエンターキー
 vk1Dsc07B & Space::Send,{Blind}{Enter}
-vk1Dsc07B & Q::Send,{Blind}{Enter}
 
-; 変換もエンターキー
-vk1Csc079::Send,{Blind}{Enter}
+; 変換でエスケープキー
+vk1Csc079::Send,{Blind}{Escape}
 
-; 無変換+RZでDEL、無変換+TGVでBS
+; 無変換+RZでDEL、無変換+TVでBS
 vk1Dsc07B & R::Send,{Delete}
 vk1Dsc07B & Z::Send,{Delete}
 vk1Dsc07B & T::Send,{BS}
-vk1Dsc07B & G::Send,{BS}
 vk1Dsc07B & V::Send,{BS}
 
 ; かなキーもBS
@@ -40,17 +38,22 @@ vk1Dsc07B & 0::Send,{Blind}{F10}
 vk1Dsc07B & -::Send,{Blind}{F11}
 vk1Dsc07B & ^::Send,{Blind}{F12}
 
-; 無変換+FでPageDown、無変換+AでPageUp
-vk1Dsc07B & F::Send,{Blind}{PgDn}
-vk1Dsc07B & A::Send,{Blind}{PgUp}
+; 無変換+BGでPageDown、無変換+QでPageUp
+vk1Dsc07B & G::Send,{Blind}{PgDn}
+vk1Dsc07B & B::Send,{Blind}{PgDn}
+vk1Dsc07B & Q::Send,{Blind}{PgUp}
 
 ; 無変換+WでHOME、無変換+EでEND
 vk1Dsc07B & W::Send,{Blind}{Home}
 vk1Dsc07B & E::Send,{Blind}{End}
 
-vk1Dsc07B & S::Send,{Blind}{Up}
-vk1Dsc07B & D::Send,{Blind}{Down}
+; 無変換+ASDFでVim風カーソルキー
+vk1Dsc07B & A::Send,{Blind}{Left}
+vk1Dsc07B & S::Send,{Blind}{Down}
+vk1Dsc07B & D::Send,{Blind}{Up}
+vk1Dsc07B & F::Send,{Blind}{Right}
 
 
 ; 無変換+:でPrintScreen
 vk1Dsc07B & vkBAsc028::Send,{Blind}{PrintScreen}
+
