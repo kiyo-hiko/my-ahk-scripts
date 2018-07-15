@@ -6,12 +6,14 @@
 ; 無変換+スペースでエンターキー
 vk1Dsc07B & Space::Send,{Blind}{Enter}
 
+; 無変換+Zでエスケープキー
+vk1Dsc07B & Z::Send,{Blind}{Escape}
+
 ; 変換でエスケープキー
 vk1Csc079::Send,{Blind}{Escape}
 
-; 無変換+RZでDEL、無変換+TVでBS
+; 無変換+RでDEL、無変換+TVでBS
 vk1Dsc07B & R::Send,{Delete}
-vk1Dsc07B & Z::Send,{Delete}
 vk1Dsc07B & T::Send,{BS}
 vk1Dsc07B & V::Send,{BS}
 
