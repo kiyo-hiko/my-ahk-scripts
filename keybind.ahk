@@ -1,21 +1,24 @@
 ; AutoHotKey Keybind Script
-; Since 2015. 8.28
-; Updated 2016. 7.11
 ; Written by kiyo-hiko
 
-; 無変換+スペースでエンターキー
+; 無変換+スペースVIでエンターキー(スペースはやめるかも)
 vk1Dsc07B & Space::Send,{Blind}{Enter}
+vk1Dsc07B & V::Send,{Blind}{Enter}
+vk1Dsc07B & I::Send,{Blind}{Enter}
 
-; 無変換+Zでエスケープキー
-vk1Dsc07B & Z::Send,{Blind}{Escape}
+; 無変換+Oでタブキー
+vk1Dsc07B & O::Send,{Blind}{Tab}
+
+; 無変換+Z;でエスケープキー
+vk1Dsc07B & Z::Send,k{Blind}{Escape}
+vk1Dsc07B & vkBBsc027::Send,{Blind}{Escape}
 
 ; 変換でエスケープキー
 vk1Csc079::Send,{Blind}{Escape}
 
-; 無変換+RでDEL、無変換+TVでBS
+; 無変換+RでDEL、無変換+TでBS
 vk1Dsc07B & R::Send,{Delete}
 vk1Dsc07B & T::Send,{BS}
-vk1Dsc07B & V::Send,{BS}
 
 ; かなキーもBS
 vkF2sc070::Send,{BS}
@@ -40,9 +43,8 @@ vk1Dsc07B & 0::Send,{Blind}{F10}
 vk1Dsc07B & -::Send,{Blind}{F11}
 vk1Dsc07B & ^::Send,{Blind}{F12}
 
-; 無変換+BGでPageDown、無変換+QでPageUp
+; 無変換+GでPageDown、無変換+QでPageUp
 vk1Dsc07B & G::Send,{Blind}{PgDn}
-vk1Dsc07B & B::Send,{Blind}{PgDn}
 vk1Dsc07B & Q::Send,{Blind}{PgUp}
 
 ; 無変換+WでHOME、無変換+EでEND
